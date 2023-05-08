@@ -34,12 +34,32 @@ const tweetsArray = [
   },
 ]
 
-function App() {
+// export default function App() {
+//   return (
+//     <div className='App'>
+//       <Tweet tweet = { tweetsArray[0] } />
+//       <Tweet tweet = { tweetsArray[1] } />
+//       <Tweet tweet = { tweetsArray[2] } />
+//     </div>
+//   )
+// }
+
+// const App = () => {
+//   {tweetsArray.map((element, index) => (
+//     <div className='App'>
+//       <Tweet tweet = {element} />
+//     </div>
+//   ))}
+// }
+
+export default function App() {
   return (
     <div className='App'>
-      <Tweet />
+      {tweetsArray.map((element) => (
+        <Tweet tweet = {element} />
+      ))}
     </div>
   )
 }
 
-export default App
+// export default App()
